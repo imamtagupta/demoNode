@@ -1,0 +1,23 @@
+{
+  "name": "demonode",
+  "version": "1.0.0",
+  "description": "Simple node app with hello world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgupta96/demoNode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgupta96/demoNode/issues"
+  },
+  "homepage": "https://github.com/mgupta96/demoNode#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
