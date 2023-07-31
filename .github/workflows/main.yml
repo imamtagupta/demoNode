@@ -36,17 +36,17 @@ jobs:
     - name: Run test
       run: npm test
 
-  # deploy:
-  #   runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-  #   steps:
+    steps:
 
-  #   - name: Deploy to Render
-  #     env:
-  #       RENDER_TOKEN: ${{ secrets.staging }}  # Add your Render token as a secret in the repository settings
-  #     run: |
-  #       npx render login --token $RENDER_TOKEN
-  #       npx render deploy --branch main --build-command "npm run build" --start-command "npm start"
+    - name: Deploy to Render
+      env:
+        RENDER_TOKEN: ${{ secrets.staging }}  # Add your Render token as a secret in the repository settings
+      run: |
+        npx render login --token $RENDER_TOKEN
+        npx render deploy --branch main --build-command "npm run build" --start-command "npm start"
 
     # steps:
     #   # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it
