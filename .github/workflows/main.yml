@@ -45,7 +45,7 @@ jobs:
       env:
         RENDER_TOKEN: ${{ secrets.RENDER_API_KEY }}  # Add your Render token as a secret in the repository settings
       run: |
-        npx @render/cli deploy --api-key $RENDER_TOKEN
+        npx @render/cli@1.2.3 deploy --api-key $RENDER_TOKEN
     # npx render login --token $RENDER_TOKEN
     # npx render deploy --branch main --build-command "npm run build" --start-command "npm start"
 
